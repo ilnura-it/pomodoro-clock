@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@600&family=Oswald&family=Source+Code+Pro:wght@700&display=swap');
+
+#bgc-video {
+  position: fixed;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100vh;
+  z-index: -1;
+}
+
+h1 {
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 42px;
+  font-weight: 900;
+  text-shadow: 0px 3px 3px rgba(245, 120, 4, 0.8);
+}
+.clockApp {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Jura', sans-serif;
+  margin-top: 10%;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 500px;
+}
+
+.break-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(243, 230, 222);
+  padding: 10px;
+  border: 2px solid rgb(237, 98, 5);
+  border-radius: 15px;
+}
+#break-label,
+#session-label {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  
+}
+.time {
+  font-size: 28px;
+}
+.buttons {
+  margin: 25px;
+}
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.arrow {
+  font-size: 28px;
+  font-weight: bold;
+  color: transparent;
+  background: #242424;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  text-shadow: 0px 3px 3px rgba(245, 120, 4, 0.5);
+}
+#start_stop,
+#reset, #pause {
+  margin: 10px 25px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 15px;
+  border: 2px solid rgb(237, 98, 5);
+}
+
+.control{
+  font-size: 32px;
+  font-weight: bold;
+  text-shadow: 0px 3px 3px rgba(245, 120, 4, 0.5);
+}
+
+
+.circular {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  top: 47%;
+  left: 45%;
+  transform: scale(2);
+}
+.circular .inner {
+  position: absolute;
+  z-index: 6;
+  top: 7%;
+  left: 7%;
+  height: 172px;
+  width: 172px;
+ 
+  background: rgb(243, 230, 222);
+  border-radius: 100%;
+}
+.circular .dispaly {
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  font-size: 18px;
+  font-weight: 500;
+ text-align: center;
+  color: #20528a;
+  text-shadow: #d08058 1.5px 2px 1.5px;
+}
+#time-left{
+  font-size: 36px;
+}
+
